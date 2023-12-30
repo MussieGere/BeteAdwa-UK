@@ -1,0 +1,637 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        BETE ADWA UNITED KINGDOM
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to right, #ff9966, #9d8adb);
+        }
+
+        img[alt="Logo"] {
+            float: left;
+            width: 145px;
+            height: 140px;
+            border-radius: 50%;
+        }
+
+        p.text-4xl {
+            background-color: rgba(52, 57, 51, 0.6);
+            /* Very light gray */
+            padding: 10px;
+            /* Add some padding so the background color forms a box around the text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Change the style to italic */
+            margin-top: 20px;
+            display: inline-block;
+            color: rgb(235, 230, 230)
+                /* Add space between the h1 and the p */
+        }
+
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            margin: 200px 10px 10px 10px;
+        }
+
+        .countdown-box {
+            text-align: center;
+            border: 1px solid #ddd;
+            width: 120px;
+            /* Increase the width */
+            height: 120px;
+            /* Increase the height */
+            border-radius: 50%;
+            padding: 20px;
+            color: white;
+            display: flex;
+            /* Add this */
+            flex-direction: column;
+            /* Add this */
+            justify-content: center;
+            margin: 0 10px;
+        }
+
+        .countdown-box h1 {
+            margin: 0;
+            /* Remove the default margin */
+            font-size: 2em;
+            /* Increase the font size */
+        }
+
+        .countdown-box p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            /* Increase the font size */
+        }
+
+        .countdown-box:nth-child(1) {
+            background-color: rgba(73, 186, 48, 0.6);
+            /* Use rgba for lighter color */
+        }
+
+        .countdown-box:nth-child(2) {
+            background-color: rgba(248, 240, 7, 0.6);
+            /* Use rgba for lighter color */
+        }
+
+        .countdown-box:nth-child(3) {
+            background-color: rgba(236, 10, 10, 0.6);
+            /* Use rgba for lighter color */
+        }
+
+        .countdown-box:nth-child(4) {
+            background-color: rgba(9, 118, 226, 0.6);
+            /* Use rgba for lighter color */
+        }
+
+        div.rounded-full {
+            border-radius: 50%;
+            /* Make the divs more circular */
+        }
+
+        img[alt="mission"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="Logo1"] {
+            float: right;
+            width: 145px;
+            height: 140px;
+            border-radius: 100%;
+        }
+
+        img[alt="Live Stages with a crowd watching a performance"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="celebrate"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="afro"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="women"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="war"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="trust"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        img[alt="edu"] {
+            width: 450px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .overlay::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body class="bg-red text-white">
+    <!-- Header -->
+    <header class="bg-orange-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img alt="Logo" class="w-32" src="Images/logo.jpg">
+            <nav class="flex space-x-4">
+                <a class="text-white hover:text-gray-400" href="#home">
+                    Home
+                </a>
+                <a class="text-white hover:text-gray-400" href="#updates">
+                    Updates
+                </a>
+                <a class="text-white hover:text-gray-400" href="#celebration">
+                    ADWA 2024
+                </a>
+                <a class="text-white hover:text-gray-400" href="#experience">
+                    Experience
+                </a>
+                <a class="text-white hover:text-gray-400" href="#get-involved">
+                    Get Involved
+                </a>
+                <a class="text-white hover:text-gray-400" href="#who-we-are">
+                    Who We Are
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-16 bg-cover bg-center"
+            style="background-image: url('Images/background\ im2.jpg');">
+            <h1 class="text-6xl font-bold mb-4">
+                BETE ADWA Victory of Adwa Celebration
+            </h1>
+            <p class="text-4xl mb-8">
+                March 2nd, 2024
+            </p>
+            <div class="countdown-container" id="countdown">
+                <div class="countdown-box">
+                    <h1 id="days">0</h1>
+                    <p>Days</p>
+                </div>
+                <div class="countdown-box">
+                    <h1 id="hours">0</h1>
+                    <p>Hours</p>
+                </div>
+                <div class="countdown-box">
+                    <h1 id="minutes">0</h1>
+                    <p>Minutes</p>
+                </div>
+                <div class="countdown-box">
+                    <h1 id="seconds">0</h1>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updates Section -->
+        <section id="updates" class="bg-red-100">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 class="text-black text-6xl font-bold">
+                        Updates
+                    </h2>
+                    <a class="text-yellow-400 text-4xl hover:text-yellow-300" href="#updates">
+                        All Updates
+                    </a>
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                    <!-- First News Item -->
+                    <div class="bg-purple-900 text-white p-4">
+                        <img src="Images/update box1.jpg" alt="back1">
+                        <p class="mb-2">
+                            Mar 2, 2023
+                        </p>
+                        <h2 class="text-xl font-bold mb-2">
+                            Victory of Adwa Celebration 2023
+                        </h2>
+                        <p>
+                            We're excited to announce the dates for the Victory of Adwa Celebration 2023! Join us from
+                            February 28 to March
+                            2 as we commemorate this historic victory with a series of events and activities.
+                        </p>
+                    </div>
+                    <!-- Second News Item -->
+                    <div class="bg-green-900 text-white p-4">
+                        <img src="Images/update box2.jpg" alt="back1">
+                        <p class="mb-2">
+                            Mar 1, 2023
+                        </p>
+                        <h2 class="text-xl font-bold mb-2">
+                            Event Locations Announced
+                        </h2>
+                        <p>
+                            We've finalized the locations for our Victory of Adwa Celebration 2023 events! Check out our
+                            Locations page for
+                            more details and start planning your visit today.
+                        </p>
+                    </div>
+                    <!-- Third News Item -->
+                    <div class="bg-yellow-400 text-black p-4">
+                        <img src="Images/update box3.jpg" alt="back1">
+                        <p class="mb-2">
+                            Feb 19, 2023
+                        </p>
+                        <h2 class="text-xl font-bold mb-2">
+                            Call for Volunteers
+                        </h2>
+                        <p>
+                            We're looking for volunteers to help make the Victory of Adwa Celebration 2023 a success! If
+                            you're interested
+                            in volunteering, visit our Get Involved page for more information.
+                        </p>
+                    </div>
+                    <!-- Fourth News Item -->
+                    <div class="bg-gray-800 text-white p-4">
+                        <img alt="A spectacular night view of a music festival stage with fireworks and a large crowd, with a dark overlay"
+                            class="mb-4" height="400" src="Images/update box8.jpg" width="600" />
+                        <p class="mb-2">
+                            Nov 19, 2023
+                        </p>
+                        <h2 class="text-xl font-bold mb-2">
+                            Event Schedule Released
+                        </h2>
+                        <p>
+                            The event schedule for the Victory of Adwa Celebration 2023 is now available! Visit our
+                            Updates page to see the
+                            full schedule and plan your celebration experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carnival 2024 Section -->
+        <section id="celebration" class="bg-gradient-to-r from-blue-500 via-red-500 to-yellow-500">
+            <div class="text-center text-white text-6xl font-bold py-8">
+                Adwa Victory Day (የዐድዋ ድል ቀን)
+            </div>
+            <div class="flex justify-center items-stretch h-screen">
+                <!-- Saturday Card -->
+                <div class="w-1/3 bg-green-600 text-white text-center p-8 relative">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-25"
+                        style="background-image: url('Images/q.jpg');"></div>
+                    <div class="z-10 relative">
+                        <h2 class="text-6xl font-bold mb-4">Saturday</h2>
+                        <p class="text-2xl mb-2"><strong>2<sup>nd</sup> March</strong></p>
+                        <br>
+                        <p class="text-l font-semibold mb-4">13:30</p>
+                        <p class="text-xl mb-2">Meet at King's Cross Station</p>
+                        <br>
+                        <br>
+                        <p class="text-l font-semibold mb-4">14:00</p>
+                        <p class="text-xl mb-2">Live DJ Music</p>
+                        <br>
+                        <br>
+                        <p class="text-l font-semibold mb-4">14:45 - 15:00</p>
+                        <p class="text-xl mb-2">Guest Speakers</p>
+                        <br>
+                        <button class="bg-white text-green-600 font-semibold py-2 px-4 rounded-full mb-4">Full Saturday
+                            Schedule</button>
+                        <button class="bg-white text-green-600 font-semibold py-2 px-4 rounded-full">Live DJ
+                            Music</button>
+                    </div>
+                </div>
+
+                <!-- 2nd March Card -->
+                <div class="w-1/3 bg-yellow-500 text-white text-center p-8 relative">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-25"
+                        style="background-image: url('Images/a.jpg');"></div>
+                    <div class="z-10 relative">
+                        <h2 class="text-5xl font-bold mb-4">2<sup>nd</sup> March</h2>
+                        <br>
+                        <br>
+                        <p class="text-xl font-semibold mb-4">15:00 - 16:00</p>
+                        <p class="text-xl mb-2">Poems reading</p>
+                        <br>
+                        <p class="text-2xl font-semibold mb-4">K’ererita/ቀረርቶ</p>
+                        <br>
+                        <br>
+                        <p class="text-xl mb-2">Children's Activities</p>
+                        <p class="text-xl font-semibold mb-4">16:00 - 16:30</p>
+                        <br>
+                        <br>
+                        <p class="mb-4">Free to All</p>
+                        <button class="bg-white text-pink-500 font-semibold py-2 px-4 rounded-full">Guest Speakers
+                            list</button>
+                    </div>
+                </div>
+
+                <!-- Parade Card -->
+                <div class="w-1/3 bg-red-700 text-white text-center p-8 relative">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-25"
+                        style="background-image: url('Images/R.jpeg');"></div>
+                    <div class="z-10 relative">
+                        <h2 class="text-5xl font-bold mb-4">PARADE</h2>
+                        <br>
+                        <br>
+                        <p class="text-xl mb-2">Begins to the hall</p>
+                        <p class="text-xl font-semibold mb-4">17:00 - 21:30</p>
+                        <br>
+                        <br>
+                        <p class="text-xl mb-2">Entertainment</p>
+                        <p class="text-xl font-semibold mb-4">22:00</p>
+                        <br>
+                        <br>
+                        <p class="text-3xl mb-8">The End</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="bg-gray-900" id="experience">
+            <div class="grid grid-cols-4 gap-4 p-4">
+                <div class="relative">
+                    <img alt="Mas Bands with people dancing in vibrant feathered costumes" class="w-full h-auto"
+                        height="225" src="Images/background im2.jpg" width="400" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Bands
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Steel Bands with people playing steel drums" class="w-full h-auto"
+                        src="Images/background im3.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Dancing
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Soca &amp; Calypso with performers in colorful outfits" class="w-full h-auto" height="225"
+                        src="Images/background im4.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Food &amp; Drink
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Brazilian Bands with dancers in elaborate feathered costumes" class="w-full h-auto"
+                        src="Images/background im5.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            History
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Sound Systems with a stack of speakers and crowd dancing" class="w-full h-auto"
+                        height="225" src="Images/background im1.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Sound Systems
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="Live Stages with a crowd watching a performance" class="w-full h-auto" height="225"
+                        src="Images/update box5.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Live Stages
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img alt="celebrate" class="w-full h-auto" height="225" src="Images/update box4.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Walk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved Section -->
+        <section>
+            <div class="relative" id="get-involved">
+                <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 opacity-75">
+                </div>
+                <div class="flex justify-between items-center px-8 py-4">
+                    <h1 class="text-white text-4xl font-bold z-10">
+                        Get Involved!
+                    </h1>
+                    <button class="bg-yellow-400 text-black py-2 px-4 rounded z-10">
+                        All Ways to Get involved
+                    </button>
+                </div>
+                <div class="flex">
+                    <div class="relative w-1/3">
+                        <img alt="Colorful abstract shapes" class="w-full h-full object-cover" height="400"
+                            src="Images/don.jpg" width="600" />
+                        <div class="overlay absolute inset-0">
+                        </div>
+                        <button class="absolute bottom-0 left-0 bg-gray-800 text-white py-2 px-4 m-4 rounded">
+                            Donate
+                        </button>
+                    </div>
+                    <div class="relative w-1/3">
+                        <img alt="People watching a performance in an outdoor event" class="w-full h-full object-cover"
+                            height="400" src="Images/band.jpg" width="600" />
+                        <div class="overlay absolute inset-0">
+                        </div>
+                        <button class="absolute bottom-0 left-0 bg-gray-800 text-white py-2 px-4 m-4 rounded">
+                            Join a Band or Perform
+                        </button>
+                    </div>
+                    <div class="relative w-1/3">
+                        <img alt="Close-up of a sound system with colorful speakers" class="w-full h-full object-cover"
+                            height="400" src="Images/sponsor.webp" width="600" />
+                        <div class="overlay absolute inset-0">
+                        </div>
+                        <button class="absolute bottom-0 left-0 bg-gray-800 text-white py-2 px-4 m-4 rounded">
+                            Sponsor a Band or Sound System
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="bg-black text-white" id="who-we-are">
+            <div class="container mx-auto px-4">
+                <div class="text-6xl font-bold py-12 text-center">
+                    Who We Are
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="relative">
+                        <img alt="mission" class="w-full h-full object-cover" src="Images/update box8.jpg" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
+                                Our Mission
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img alt="women" class="w-full h-full object-cover" height="400" src="Images/im.jpeg"
+                            width="600" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
+                                Impact
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img alt="afro" class="w-full h-full object-cover" height="400" src="Images/org.jpeg"
+                            width="600" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
+                                Organizers
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img alt="trust" class="w-full h-full object-cover" height="400" src="Images/Amba.jpeg"
+                            width="600" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
+                                Ambassadors
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img alt="war" class="w-full h-full object-cover" height="400" src="Images/partners.jpeg"
+                            width="600" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
+                                Partners
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img alt="edu" class="w-full h-full object-cover" height="400" src="Images/education.jpeg"
+                            width="600" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
+                                Education
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keep Up-to-date Section -->
+        <section class="py-16 bg-red-600">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8">
+                    Keep Up-to-date
+                </h2>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a class="text-white hover:text-gray-300" href="#">
+                        <i class="fab fa-twitter fa-2x">
+                        </i>
+                    </a>
+                    <a class="text-white hover:text-gray-300" href="#">
+                        <i class="fab fa-facebook-f fa-2x">
+                        </i>
+                    </a>
+                    <a class="text-white hover:text-gray-300" href="#">
+                        <i class="fab fa-instagram fa-2x">
+                        </i>
+                    </a>
+                </div>
+                <form>
+                    <input class="p-2 rounded-l-lg" placeholder="Subscribe for Email Updates" type="email" />
+                    <button class="bg-yellow-400 p-2 rounded-r-lg" type="submit">
+                        Subscribe
+                    </button>
+                </form>
+                <img alt="Logo1" class="w-32" src="Images/logo.jpg">
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 p-4 text-center text-sm">
+        <p>
+            Copyright BETE ADWA UNITED KINGDOM Ltd. All Rights Reserved.
+        </p>
+        <a class="text-gray-500 hover:text-gray-300" href="#">
+            Privacy Policy
+        </a>
+        |
+        <a class="text-gray-500 hover:text-gray-300" href="#">
+            Cookies
+        </a>
+        |
+        <a class="text-gray-500 hover:text-gray-300" href="#">
+            Terms of Use
+        </a>
+        <p>
+            Powered by The Communications Group
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 2, 2024 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var countdownFunction = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        document.getElementById("days").innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
+        document.getElementById("hours").innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        document.getElementById("minutes").innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById("seconds").innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("days").innerHTML = "0";
+            document.getElementById("hours").innerHTML = "0";
+            document.getElementById("minutes").innerHTML = "0";
+            document.getElementById("seconds").innerHTML = "0";
+        }
+    }, 1000);
+</script>
