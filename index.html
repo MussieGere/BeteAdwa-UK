@@ -26,15 +26,11 @@
 
         p.text-4xl {
             background-color: rgba(52, 57, 51, 0.6);
-            /* Very light gray */
             padding: 10px;
-            /* Add some padding so the background color forms a box around the text */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* Change the style to italic */
             margin-top: 20px;
             display: inline-block;
             color: rgb(235, 230, 230)
-                /* Add space between the h1 and the p */
         }
 
         .countdown-container {
@@ -164,15 +160,16 @@
             left: 0;
             background: rgba(0, 0, 0, 0.6);
         }
+
     </style>
 </head>
 
 <body class="bg-red text-white">
     <!-- Header -->
     <header class="bg-orange-600 p-4">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
             <img alt="Logo" class="w-32" src="Images/logo.jpg">
-            <nav class="flex space-x-4">
+            <nav class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4 sm:mt-0">
                 <a class="text-white hover:text-gray-400" href="#home">
                     Home
                 </a>
@@ -204,9 +201,9 @@
                 BETE ADWA Victory of Adwa Celebration
             </h1>
             <p class="text-4xl mb-8">
-                March 2<sup>nd</sup>, 2024
+                March 2nd, 2024
             </p>
-            <div class="countdown-container" id="countdown">
+            <div class="countdown-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" id="countdown">
                 <div class="countdown-box">
                     <h1 id="days">0</h1>
                     <p>Days</p>
@@ -237,7 +234,7 @@
                         All Updates
                     </a>
                 </div>
-                <div class="grid grid-cols-4 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <!-- First News Item -->
                     <div class="bg-purple-900 text-white p-4">
                         <img src="Images/update box1.jpg" alt="back1">
@@ -308,12 +305,12 @@
             <div class="text-center text-white text-6xl font-bold py-8">
                 Adwa Victory Day (የዐድዋ ድል ቀን)
             </div>
-            <div class="flex justify-center items-stretch h-screen">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8">
                 <!-- Saturday Card -->
-                <div class="w-1/3 bg-green-600 text-white text-center p-8 relative">
+                <div class="flex flex-col items-stretch w-full sm:w-1/2s bg-green-600 text-white text-center p-8 relative">
                     <div class="absolute inset-0 bg-cover bg-center opacity-25"
                         style="background-image: url('Images/q.jpg');"></div>
-                    <div class="z-10 relative">
+                    <div class="z-10 relative flex-grow">
                         <h2 class="text-6xl font-bold mb-4">Saturday</h2>
                         <p class="text-2xl mb-2"><strong>2<sup>nd</sup> March</strong></p>
                         <br>
@@ -336,10 +333,10 @@
                 </div>
 
                 <!-- 2nd March Card -->
-                <div class="w-1/3 bg-yellow-500 text-white text-center p-8 relative">
+                <div class="flex flex-col items-stretch w-full sm:w-1/2s bg-yellow-500 text-white text-center p-8 relative">
                     <div class="absolute inset-0 bg-cover bg-center opacity-25"
                         style="background-image: url('Images/a.jpg');"></div>
-                    <div class="z-10 relative">
+                    <div class="z-10 relative flex-grow">
                         <h2 class="text-5xl font-bold mb-4">2<sup>nd</sup> March</h2>
                         <br>
                         <br>
@@ -360,10 +357,10 @@
                 </div>
 
                 <!-- Parade Card -->
-                <div class="w-1/3 bg-red-700 text-white text-center p-8 relative">
+                <div class="flex flex-col items-stretch w-full sm:w-1/2s bg-red-700 text-white text-center p-8 relative">
                     <div class="absolute inset-0 bg-cover bg-center opacity-25"
                         style="background-image: url('Images/R.jpeg');"></div>
-                    <div class="z-10 relative">
+                    <div class="z-10 relative flex-grow">
                         <h2 class="text-5xl font-bold mb-4">PARADE</h2>
                         <br>
                         <br>
@@ -383,7 +380,7 @@
 
         <!-- Experience Section -->
         <section class="bg-gray-900" id="experience">
-            <div class="grid grid-cols-4 gap-4 p-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
                 <div class="relative">
                     <img alt="Mas Bands with people dancing in vibrant feathered costumes" class="w-full h-auto"
                         height="225" src="Images/background im2.jpg" width="400" />
@@ -454,16 +451,16 @@
             <div class="relative" id="get-involved">
                 <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 opacity-75">
                 </div>
-                <div class="flex justify-between items-center px-8 py-4">
+                <div class="flex flex-col sm:flex-row justify-between items-center px-8 py-4">
                     <h1 class="text-white text-4xl font-bold z-10">
                         Get Involved!
                     </h1>
-                    <button class="bg-yellow-400 text-black py-2 px-4 rounded z-10">
+                    <button class="bg-yellow-400 text-black py-2 px-4 rounded z-10 mt-4 sm:mt-0">
                         All Ways to Get involved
                     </button>
                 </div>
-                <div class="flex">
-                    <div class="relative w-1/3">
+                <div class="flex flex-col sm:flex-row">
+                    <div class="relative w-full sm:w-1/3">
                         <img alt="Colorful abstract shapes" class="w-full h-full object-cover" height="400"
                             src="Images/don.jpg" width="600" />
                         <div class="overlay absolute inset-0">
@@ -472,7 +469,7 @@
                             Donate
                         </button>
                     </div>
-                    <div class="relative w-1/3">
+                    <div class="relative  w-full sm:w-1/3">
                         <img alt="People watching a performance in an outdoor event" class="w-full h-full object-cover"
                             height="400" src="Images/band.jpg" width="600" />
                         <div class="overlay absolute inset-0">
@@ -481,7 +478,7 @@
                             Join a Band or Perform
                         </button>
                     </div>
-                    <div class="relative w-1/3">
+                    <div class="relative w-full sm:w-1/3">
                         <img alt="Close-up of a sound system with colorful speakers" class="w-full h-full object-cover"
                             height="400" src="Images/sponsor.webp" width="600" />
                         <div class="overlay absolute inset-0">
@@ -500,7 +497,7 @@
                 <div class="text-6xl font-bold py-12 text-center">
                     Who We Are
                 </div>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="relative">
                         <img alt="mission" class="w-full h-full object-cover" src="Images/update box8.jpg" />
                         <div class="absolute inset-0 flex items-center justify-center">
@@ -528,7 +525,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img alt="trust" class="w-full h-full object-cover" height="400" src="Images/amba.jpeg"
+                        <img alt="trust" class="w-full h-full object-cover" height="400" src="Images/Amba.jpeg"
                             width="600" />
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
@@ -579,6 +576,7 @@
                     </a>
                 </div>
                 <form>
+                    <form class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
                     <input class="p-2 rounded-l-lg" placeholder="Subscribe for Email Updates" type="email" />
                     <button class="bg-yellow-400 p-2 rounded-r-lg" type="submit">
                         Subscribe
