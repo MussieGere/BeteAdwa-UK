@@ -90,6 +90,13 @@
             /* Use rgba for lighter color */
         }
 
+        img[alt="menilik"] {
+
+            width: 700px;
+            height: 450px;
+            border-radius: 20%;
+        }
+
         div.rounded-full {
             border-radius: 50%;
             /* Make the divs more circular */
@@ -160,7 +167,6 @@
             left: 0;
             background: rgba(0, 0, 0, 0.6);
         }
-
     </style>
 </head>
 
@@ -195,7 +201,8 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section id="home" class="text-center py-16 bg-cover bg-center"
+        <section id="home"
+            class="relative flex flex-col justify-between text-center py-16 pb-32 sm:pb-64 md:pb-96 bg-cover bg-center"
             style="background-image: url('Images/background\ im2.jpg');">
             <h1 class="text-6xl font-bold mb-4">
                 BETE ADWA Victory of Adwa Celebration
@@ -203,23 +210,56 @@
             <p class="text-4xl mb-8">
                 March 2nd, 2024
             </p>
-            <div class="countdown-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" id="countdown">
-                <div class="countdown-box">
-                    <h1 id="days">0</h1>
-                    <p>Days</p>
+            <div class="flex justify-center mb-4">
+                <div class="countdown-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 justify-items-center items-center"
+                    id="countdown">
+                    <div class="countdown-box">
+                        <h1 id="days">0</h1>
+                        <p>Days</p>
+                    </div>
+                    <div class="countdown-box">
+                        <h1 id="hours">0</h1>
+                        <p>Hours</p>
+                    </div>
+                    <div class="countdown-box">
+                        <h1 id="minutes">0</h1>
+                        <p>Minutes</p>
+                    </div>
                 </div>
-                <div class="countdown-box">
-                    <h1 id="hours">0</h1>
-                    <p>Hours</p>
+            </div>
+        </section>
+
+        <!-- Key Individuals Section -->
+        <section class="flex flex-col items-center justify-center min-h-screen"
+            style="background: linear-gradient(to right, green, yellow, red);">
+            <div class="flex flex-col sm:flex-row mb-8">
+                <!-- Left side -->
+                <div class="relative">
+                    <img alt="Crowd enjoying at a steel band competition, green overlay"
+                        class="rounded-l-lg object-cover sm:h-96 sm:w-96 h-auto w-auto" src="Images/Menelik.jpg" />
                 </div>
-                <div class="countdown-box">
-                    <h1 id="minutes">0</h1>
-                    <p>Minutes</p>
+                <!-- Right side -->
+                <div class="relative">
+                    <img alt="Family enjoying at a children's carnival, purple overlay"
+                        class="rounded-r-lg object-cover sm:h-96 sm:w-96 h-auto w-auto" src="Images/etigie taytu.jpg" />
                 </div>
-                <div class="countdown-box">
-                    <h1 id="seconds">0</h1>
-                    <p>Seconds</p>
-                </div>
+            </div>
+            <div class="text-black text-center p-4">
+                <p>
+                    March 1 marks the 128th anniversary of the Battle of Adwa, a decisive victory of Ethiopia over
+                    Italian colonialism. This great victory has been a source of inspiration for struggles for
+                    freedom
+                    throughout the pan-African world. Adwa has important lessons for Africans in their resistance
+                    against new forms of oppression. Ethiopia became emblematic of African valour and resistance,
+                    the
+                    bastion of prestige and hope to thousands of Africans who were experiencing the full shock of
+                    European conquest, and were beginning to search for an answer to the myth of African
+                    inferiority...
+
+                    The victory provided practical expression to Pan-Africanism, self-worth, dignity, unity,
+                    resistance,
+                    confidence, self-reliance and freedom from colonialism.
+                </p>
             </div>
         </section>
 
@@ -230,7 +270,7 @@
                     <h2 class="text-black text-6xl font-bold">
                         Updates
                     </h2>
-<!--                     <a class="text-yellow-400 text-4xl hover:text-yellow-300" href="#updates">
+                    <!-- <a class="text-yellow-400 text-4xl hover:text-yellow-300" href="#updates">
                         All Updates
                     </a> -->
                 </div>
@@ -307,9 +347,11 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mb-8">
                 <!-- Saturday Card -->
-                <div class="flex flex-col items-stretch w-full sm:w-1/2s bg-green-600 text-white text-center p-8 relative">
+                <div
+                    class="flex flex-col items-stretch w-full sm:w-1/2s bg-green-600 text-white text-center p-8 relative">
                     <div class="absolute inset-0 bg-cover bg-center opacity-25"
-                        style="background-image: url('Images/q.jpg');"></div>
+                        style="background-image: url('Images/q.jpg');">
+                    </div>
                     <div class="z-10 relative flex-grow">
                         <h2 class="text-6xl font-bold mb-4">Saturday</h2>
                         <p class="text-2xl mb-2"><strong>2<sup>nd</sup> March</strong></p>
@@ -333,9 +375,11 @@
                 </div>
 
                 <!-- 2nd March Card -->
-                <div class="flex flex-col items-stretch w-full sm:w-1/2s bg-yellow-500 text-white text-center p-8 relative">
+                <div
+                    class="flex flex-col items-stretch w-full sm:w-1/2s bg-yellow-500 text-white text-center p-8 relative">
                     <div class="absolute inset-0 bg-cover bg-center opacity-25"
-                        style="background-image: url('Images/a.jpg');"></div>
+                        style="background-image: url('Images/a.jpg');">
+                    </div>
                     <div class="z-10 relative flex-grow">
                         <h2 class="text-5xl font-bold mb-4">2<sup>nd</sup> March</h2>
                         <br>
@@ -357,9 +401,11 @@
                 </div>
 
                 <!-- Parade Card -->
-                <div class="flex flex-col items-stretch w-full sm:w-1/2s bg-red-700 text-white text-center p-8 relative">
+                <div
+                    class="flex flex-col items-stretch w-full sm:w-1/2s bg-red-700 text-white text-center p-8 relative">
                     <div class="absolute inset-0 bg-cover bg-center opacity-25"
-                        style="background-image: url('Images/R.jpeg');"></div>
+                        style="background-image: url('Images/R.jpeg');">
+                    </div>
                     <div class="z-10 relative flex-grow">
                         <h2 class="text-5xl font-bold mb-4">PARADE</h2>
                         <br>
@@ -443,6 +489,14 @@
                         </p>
                     </div>
                 </div>
+                <div class="relative">
+                    <img alt="celebrate" class="w-full h-auto" height="225" src="Images/impact.jpg" />
+                    <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 px-4 py-2">
+                        <p class="text-white font-semibold text-lg">
+                            Activities
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -499,7 +553,7 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="relative">
-                        <img alt="mission" class="w-full h-full object-cover" src="Images/update box8.jpg" />
+                        <img alt="mission" class="w-full h-full object-cover" src="Images/lij background.jpg" />
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
                                 Our Mission
@@ -507,7 +561,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img alt="women" class="w-full h-full object-cover" height="400" src="Images/im.jpeg"
+                        <img alt="women" class="w-full h-full object-cover" height="400" src="Images/lady.jpg"
                             width="600" />
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
@@ -516,7 +570,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img alt="afro" class="w-full h-full object-cover" height="400" src="Images/org.jpeg"
+                        <img alt="afro" class="w-full h-full object-cover" height="400" src="Images/group.jpg"
                             width="600" />
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
@@ -525,7 +579,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img alt="trust" class="w-full h-full object-cover" height="400" src="Images/amba.jpeg"
+                        <img alt="trust" class="w-full h-full object-cover" height="400" src="Images/pro background.jpg"
                             width="600" />
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
@@ -534,7 +588,7 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img alt="war" class="w-full h-full object-cover" height="400" src="Images/partners.jpeg"
+                        <img alt="war" class="w-full h-full object-cover" height="400" src="Images/organizers.jpg"
                             width="600" />
                         <div class="absolute inset-0 flex items-center justify-center">
                             <div class="text-4xl font-semibold bg-black bg-opacity-50 py-2 px-4">
@@ -576,13 +630,24 @@
                     </a>
                 </div>
                 <form>
-                    <form class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <input class="p-2 rounded-l-lg" placeholder="Subscribe for Email Updates" type="email" />
-                    <button class="bg-yellow-400 p-2 rounded-r-lg" type="submit">
-                        Subscribe
-                    </button>
-                </form>
-                <img alt="Logo1" class="w-32" src="Images/logo.jpg">
+                    <form
+                        class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <input class="p-2 rounded-l-lg" placeholder="Subscribe for Email Updates" type="email" />
+                        <button class="bg-yellow-400 p-2 rounded-r-lg" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                    <div class="mt-8 text-black">
+                        <p>Email: beteadwa1896@gmail.com</p>
+                        <p>Phone: +44 782 786 4359
+                            <br>
+                            +44 742 713 3335
+                            <br>
+                            +44 758 513 1830
+                            <br>
+                        </p>
+                    </div>
+                    <img alt="Logo1" class="w-32" src="Images/logo.jpg">
             </div>
         </section>
     </main>
